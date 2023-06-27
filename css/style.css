@@ -13,6 +13,34 @@
     color: var(--main-color);
 }
 
+header{
+    display: flex;
+    justify-content: space-between; 
+    background-color: blue;
+    padding:  10px;
+ }
+
+ #logoBooki{
+    background-color: yellow;
+    margin:  10px;
+ }
+
+ .lien{
+    display: flex;
+}
+
+.elementLien{
+    background-color: red;
+    border-top: 3px solid transparent; /* Bordure supérieure initiale */
+    transition: border-color 0.5s ease-in-out; /* Transition de l'animation */
+    margin:  10px;
+ 
+}
+.elementLien:hover{
+    border-top-color: rgb(0, 255, 76);
+}
+
+
 body {
     display: flex;
     justify-content: center;
@@ -23,6 +51,22 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+.rechercheLocalisation{
+    display: flex;
+    background-color: blue;
+
+}
+
+#logoLocalisation{
+    background-color: yellow;
+    margin:  10px;
+}
+
+#formRecherche{
+    background-color: red;
+    margin:  10px;
 }
 
 .section-title {
