@@ -12,15 +12,36 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c7bf673644.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <div id="logoBooki"><p>Logo</p></div>
+            <nav>
+                <div class="lien">
+                    <div class = "elementLien"><p>Hebergements</p></div>
+                    <div class = "elementLien"><p>Activite</p></div>
+                </div>      
+            </nav>
+        </header>
         <main>
+            <div class="recherche-et-filtre">
+                <h1> Trouvez votre  hebergement pour des vacances de reve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <div class="rechercheLocalisation">
+                    <div id="logoLocalisation"><p>Logo</p></div>
+                    <div id="formRecherche"> 
+                        <form>
+                            <input type="text" id="ville" name="ville" class="same-size" placeholder="Entrez la ville souhaite" required>                          
+                            <input type="submit" value="Envoyer">
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
