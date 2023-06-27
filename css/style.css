@@ -17,7 +17,6 @@ header{
     display: flex;
     justify-content: space-between; 
     background-color: blue;
-    padding:  10px;
  }
 
  #logoBooki{
@@ -56,6 +55,7 @@ body {
 .rechercheLocalisation{
     display: flex;
     background-color: blue;
+    align-items: center;
 
 }
 
@@ -68,6 +68,51 @@ body {
     background-color: red;
     margin:  10px;
 }
+
+#conteneurFiltre{
+    display: flex;
+    margin-top:  10px;
+    background-color: blue;
+}
+
+#conteneurFiltre strong{
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.listeAPuce{
+    display: inline;
+    list-style: none;
+    padding: 0;
+  }
+
+  .listeAPuce li {
+    display: inline-block;
+    background-color: red;
+    margin-right: 10px; /* Espacement entre les éléments de la liste */
+  }
+
+  .listeAPuce li::before {
+    content: "Icone+"; /* Utilise le caractère de puce (bullet point) */
+    margin-right: 5px; /* Espacement entre la puce et le texte */
+  }
+
+  #informationNombreLogement{
+    display:flex;
+    background-color: Blue;
+    margin-top: 10px;
+  }
+
+  #logoInformation{
+    background-color: yellow;
+    margin: 10px
+  }
+
+  #informationNombreLogement p{
+    background-color: red;
+    margin: 10px
+  }
 
 .section-title {
     margin: 0;
@@ -101,6 +146,7 @@ body {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .hebergements-and-populaires section {
@@ -119,6 +165,34 @@ body {
 .populaires {
     width: 32%;
 }
+
+.hebergement-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.hebergement-cards{    
+    display: flex;
+
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+.hebergement-cards img{
+    width: 230px;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.hebergement-cards article{
+    margin :auto;
+    margin-right: 10px;
+    padding:10px;
+    margin-top: 33px;
+}
+
 
 .populaires-title {
     display: flex;
