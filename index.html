@@ -18,38 +18,42 @@
 <body>
     <div class="main-container">
         <header>
-            <div id="logoBooki"><p>Logo</p></div>
+            <div class="logoBooki">
+                <img src="./images/logo/Booki.png" alt="Logo Booki">
+            </div>
             <nav>
                 <div class="lien">
-                    <div class = "elementLien"><p>Hebergements</p></div>
-                    <div class = "elementLien"><p>Activite</p></div>
+                    <div class = "elementLien"><a href="Hebergement">Hebergement</a></div>
+                    <div class = "elementLien"><a href="Activite">Activite</a></div>
                 </div>      
             </nav>
         </header>
         <main>
             <div class="recherche-et-filtre">
-                <h1> Trouvez votre  hebergement pour des vacances de reve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
+                <div class= "headline-recherche-et-filtre" >
+                    <h1> Trouvez votre  hebergement pour des vacances de reve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
                 <div class="rechercheLocalisation">
-                    <div id="logoLocalisation"><p>Logo</p></div>
-                    <div id="formRecherche"> 
-                        <form>
-                            <input type="text" id="ville" name="ville" class="same-size" placeholder="Entrez la ville souhaite" required>                          
+                    <div class="logoLocalisation"><i class="fa-solid fa-location-dot fa-s"></i></div>
+                        <form class="formRecherche">
+                            <input type="text" autocomplete="off" id="ville" name="ville" class="same-size" placeholder="Entrez la ville souhaite" required>                          
                             <input type="submit" value="Rechercher">
                         </form>
+                </div>
+                <div class="conteneurStrongFiltre">
+                    <div class="conteneurStrong">
+                         <strong>Filtres</strong>
+                    </div>
+                    <div class="conteneurFiltre">
+                            <div class ="filtres"><i class="fa-sharp fa-solid fa-money-bill"></i></i><p>Economique</p></div>
+                            <div class ="filtres"><i class="fa-solid fa-person"></i><p>Familial</p></div>
+                            <div class ="filtres"><i class="fa-solid fa-heart"></i><p>Romantique</p></div>
+                            <div class ="filtres"><i class="fa-solid fa-fire"></i><p>Nos pepites</p></div>
                     </div>
                 </div>
-                <div id="conteneurFiltre">
-                    <strong>Filtres</strong>
-                    <ul class = "listeAPuce">
-                        <li>Economique</li>
-                        <li>Familial</li>
-                        <li>Romantique</li>
-                        <li>Nos pepites</li>
-                    </ul>
-                </div>
-                <div id="informationNombreLogement">
-                    <div id = logoInformation>Logo</div>
+                <div class="infoBar">
+                    <i class="fa-solid fa-circle-info fa-lg"></i>
                     <p>Plus de 500 logements sont disponible dans cette ville</p>
                 </div>
             </div>
@@ -157,7 +161,7 @@
                         </div>
                     </article>
                     </div>
-
+                    <p id="afficherPlus">Afficher plus </p>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -217,6 +221,61 @@
                     </div>
                 </section>
             </div>
+            <div class="sectionActivite">
+                <h2>Activites a Marseille</h2>
+                <div class="activite">
+                     <article class="card">
+                        <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+                        </div>   
+                     </article>
+                     <article class="card">
+                        <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Fort de Pomegues</h3>
+                            </div>
+                        </div>   
+                     </article>       
+                     <article class="card">
+                        <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Parc national des calanques</h3>
+                            </div>
+                        </div>   
+                     </article>       
+                     <article class="card">
+                        <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Notre-dame-de-la-Garde</h3>
+                            </div>
+                        </div>   
+                     </article>              
+                </div>
+                <footer>
+                    <ul class="listFooter">
+                        <li><strong>A propos</strong></li>
+                        <li>Fonctionnement du site</li>
+                        <li>Condition et generales</li>
+                        <li>Donnee et confidentialite</li>
+                      </ul>
+                    <ul class="listFooter">
+                        <li><strong>Nos hergement</strong></li>
+                        <li>Charte qualite</li>
+                        <li>Proposer votre hotel</li>
+                    </ul>
+                    <ul class="listFooter">
+                        <li><strong>Assitance</strong></li>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </footer>
+
         </main>
         <footer></footer>
     </div>

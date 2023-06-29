@@ -13,36 +13,12 @@
     color: var(--main-color);
 }
 
-header{
-    display: flex;
-    justify-content: space-between; 
-    background-color: blue;
- }
-
- #logoBooki{
-    background-color: yellow;
-    margin:  10px;
- }
-
- .lien{
-    display: flex;
-}
-
-.elementLien{
-    background-color: red;
-    border-top: 3px solid transparent; /* Bordure supérieure initiale */
-    transition: border-color 0.5s ease-in-out; /* Transition de l'animation */
-    margin:  10px;
- 
-}
-.elementLien:hover{
-    border-top-color: rgb(0, 255, 76);
-}
 
 
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .main-container {
@@ -52,67 +28,200 @@ body {
     box-sizing: border-box;
 }
 
+/****** Header ***********/
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    height: 79px;
+ }
+
+ .logoBooki{
+    padding-top:  30px;
+    width: 61.09px;
+    height: 19px;
+ }
+
+ .logoBooki img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .lien{
+    display: flex;
+    width: 244px;
+    height: 35px;
+}
+
+.elementLien{
+    border-top: 3px solid transparent; /* Bordure supérieure initiale */
+    transition: border-color 0.5s ease-in-out; /* Transition de l'animation */
+    margin-left: 40px;
+    padding-top: 10px
+    
+ 
+}
+.elementLien:hover{
+    border-top-color: var(--main-color);
+   
+}
+
+.elementLien a{
+    text-decoration: none; /* Pernet d'enlever la barre du lien*/
+    color:black;
+}
+
+.elementLien a:hover{
+    text-decoration: none; /* Pernet d'enlever la barre du lien*/
+    color: var(--main-color);
+}
+
+.elementLien a:visited {
+    color: inherit; /* Permet de recuper la couleur d'origine du lien apres un clic*/
+  }
+
+  /****** Header end  ***********/
+
+  /****** Recherche et filtre ***********/
+
+.recherche-et-filtre{
+    height: 281px;
+    margin: 35px;
+}
+
+.headline-recherche-et-filtre {
+    height: 53px;
+    padding-bottom: 38px;
+  }
+
+.headline-recherche-et-filtre h1{
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.headline-recherche-et-filtre p{
+    font-size:16px;
+    margin:0px
+}
+
 .rechercheLocalisation{
     display: flex;
-    background-color: blue;
     align-items: center;
+    width: 377px ;
+    height: 49px;
+    
 
 }
 
-#logoLocalisation{
-    background-color: yellow;
-    margin:  10px;
-}
-
-#formRecherche{
-    background-color: red;
-    margin:  10px;
-}
-
-#conteneurFiltre{
+.logoLocalisation{
+    background-color: #F2F2F2;
+    height: 49px;
+    width: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
     display: flex;
-    margin-top:  10px;
-    background-color: blue;
+    justify-content: center; /*Aligne Horizontalement*/
+    align-items: center; /*Aligne verticalement*/
+    cursor: pointer;
 }
 
-#conteneurFiltre strong{
+.logoLocalisation .fa-solid {
+    color:black;
+}
+
+.formRecherche{
+    height: 49px;
     display: flex;
+    justify-content: center; /*Aligne Horizontalement*/
+    align-items: center; /*Aligne verticalement*/
+}
+
+.formRecherche  input[type="text"] {
+    width: 200px;
+    height: 49px;
+    text-align: center;
+    outline: none; /* Supprime l'effet de focus */ 
+    border:none;   /* Suprime les bordure */
+    font-weight: bold; /* Met le text en gras */
+}
+
+.formRecherche  input[type="submit"] {
+    width: 132px;
+    height: 49px;
+    background-color: var(--main-color);
+    color: White;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+    border: none;
+    cursor: pointer;
+}
+
+.conteneurStrongFiltre{
+    display: flex;
+    height: 50px;
+    margin-top:35px;
     align-items: center;
-    margin: 10px
+ 
 }
 
-.listeAPuce{
-    display: inline;
-    list-style: none;
-    padding: 0;
-  }
+.conteneurStrong{
+    height: 50px;
+    font-size: 18px;   
+    align-items: center; 
+    display: flex;
+    background-color: white;
+}
 
-  .listeAPuce li {
-    display: inline-block;
-    background-color: red;
-    margin-right: 10px; /* Espacement entre les éléments de la liste */
-  }
+.conteneurFiltre {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+}
 
-  .listeAPuce li::before {
-    content: "Icone+"; /* Utilise le caractère de puce (bullet point) */
-    margin-right: 5px; /* Espacement entre la puce et le texte */
-  }
+.filtres{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-left: 10px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px; 
+    
+}
 
-  #informationNombreLogement{
+.filtres:hover{
+    background-color:#DEEBFF;
+    cursor: pointer;
+}
+
+
+
+.filtres i{
+    padding-left: 15px;
+}
+
+.filtres p{
+    padding: 15px;
+}
+
+ /****** Inforbar ***********/
+
+.infoBar{
     display:flex;
-    background-color: Blue;
-    margin-top: 10px;
+    align-items: center; 
+    height: 24px;
+    margin-top: 35px;
   }
 
-  #logoInformation{
-    background-color: yellow;
-    margin: 10px
-  }
 
-  #informationNombreLogement p{
-    background-color: red;
-    margin: 10px
+  .infoBar p{
+    padding-left: 15px;
   }
+ /****** Inforbar end ***********/
+
+
+   /****** Recherche et filtre ***********/
 
 .section-title {
     margin: 0;
@@ -146,7 +255,7 @@ body {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -161,38 +270,43 @@ body {
     width: 65%;
 }
 
-/****** Populaires ***********/
-.populaires {
-    width: 32%;
-}
-
 .hebergement-title{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 } 
 .hebergement-cards{    
     display: flex;
-
     flex-wrap: wrap;
-    margin: 10px;
+    width: 100%;
+    
 
 }
+
+.hebergement-cards article{
+    width: 30%;
+    margin-top: 33px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .hebergement-cards img{
-    width: 230px;
+    width: 100%;
     height: 136px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
 }
 
-.hebergement-cards article{
-    margin :auto;
-    margin-right: 10px;
-    padding:10px;
-    margin-top: 33px;
+#afficherPlus{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 0px;
 }
 
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
 
 .populaires-title {
     display: flex;
@@ -235,7 +349,40 @@ body {
 }
 
 
+.sectionActivite{
+    margin:35px;
+}
 
+.activite{
+    display: flex;
+    margin-bottom: 50px;   
+}
+
+.activite .card{
+    width: 25%
+}
+
+.activite .card img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 200px;
+}
+
+footer{
+    display: flex;
+    background-color: var(--main-bg-color);
+}
+
+footer  ul{
+    list-style-type: none; /* Changer le style des puces */
+    width: 33%;
+    padding:20px
+}
+
+footer  ul li{   
+    padding:5px
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -276,5 +423,69 @@ body {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .main-container {
+        width: 100%;
+        max-width: 767.98px;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+/****** Header ***********/
+
+header{
+    padding:0px;
+    margin:0px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+ }
+
+ .logoBooki{
+    padding:  30px;
+    width: 61.09px;
+    height: 79px;
+
+ }
+
+ .logoBooki img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .lien{
+    display: flex;
+    justify-content: center;
+    height: 35px;
 }
+
+.elementLien{
+    
+    border-bottom: 3px solid transparent; /* Bordure supérieure initiale */
+    transition: border-bottom-color 0.5s ease-in-out; /* Transition de l'animation */
+    
+ 
+}
+.elementLien:hover{
+    border-bottom-color: var(--main-color);
+   
+}
+
+.elementLien a{
+    text-decoration: none; /* Pernet d'enlever la barre du lien*/
+    color:black;
+}
+
+
+
+}
+
+
