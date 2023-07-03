@@ -286,7 +286,7 @@ header {
 
 
 /****** Hebergements ***********/
-.hebergements {
+#sectionHebergements {
     width: 65%;
     background-color: var(--main-bg-color);
 }
@@ -384,7 +384,7 @@ header {
 }
 
 
-.sectionActivite{
+#sectionActivite{
     margin:35px;
 }
 
@@ -451,7 +451,7 @@ footer  ul li{
         flex-direction: column;
     }
 
-    .hebergements {
+    #sectionHebergements{
         width: 100%;
     }
 
@@ -594,7 +594,7 @@ header {
     order: 1;  /******changement d'ordre visualisation  ***********/
 }
 
-.hebergements{
+#sectionHebergements{
     order: 2;
 }
 
@@ -612,7 +612,7 @@ header {
     width: 100%;
 }
 
-.hebergements{
+#sectionHebergements{
     background-color:white;
 }
 
@@ -625,11 +625,11 @@ header {
     width: 100%;
 }
 
-.sectionActivite{
+#sectionActivite{
     margin-top: 0px;
 }
 
-.sectionActivite h2{
+#sectionActivite h2{
     margin-bottom: 0px;
 }
 
