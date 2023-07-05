@@ -28,7 +28,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 0px;
     box-sizing: border-box;
 }
 
@@ -327,6 +327,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left:10px;
     
 }
 
@@ -383,6 +384,7 @@ header {
     margin-bottom: 4px;
 }
 
+/****** Activite ***********/
 
 #sectionActivite{
     margin:35px;
@@ -397,6 +399,9 @@ header {
 .activite-cards .card{
     width: 23%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
     
 
 }
@@ -410,7 +415,10 @@ header {
 
 .activite-cards .card-txt{
     margin-left:20px;
-
+    height: 59px;
+    display: flex;
+    align-items: center;
+    
 }
 
 footer{
@@ -440,10 +448,6 @@ footer  ul li{
         flex-direction: column;
         margin-top: 20px;
         
-    }
-
-    .filtres{
-        margin-left:0px;
     }
 
 
