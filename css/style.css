@@ -562,7 +562,7 @@ header {
     justify-content: center;
 }
 
-.submitbutton p{
+.submitbutton strong{
     display: none;
 }
 
